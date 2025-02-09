@@ -6,7 +6,7 @@ const ItemList = () => {
 
   useEffect(() => {
     axios
-      .get(import.meta.env.VITE_ADMIN_API_URL + "api/items/")
+      .get(import.meta.env.VITE_ADMIN_API_URL + "api/invitations/")
       .then((response) => setItems(response.data))
       .catch((error) => console.error(error));
   }, []);
@@ -17,7 +17,7 @@ const ItemList = () => {
       <ul>
         {items.map((item) => (
           <li key={item.id}>
-            {item.name}: {item.description}
+            {item.guest_1_name}: {item.guest_2_name}
           </li>
         ))}
       </ul>

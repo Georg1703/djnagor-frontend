@@ -1,10 +1,9 @@
-import React from "react";
-import ItemList from "./components/ItemList";
+import Envelope from "./components/Envelope/Envelope";
 
 function App() {
   return (
     <div className="App">
-      <ItemList />
+      <Envelope />
     </div>
   );
 }
